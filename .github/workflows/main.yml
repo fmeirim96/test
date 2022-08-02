@@ -6,4 +6,5 @@ jobs:
   runscript:
     runs-on: ubuntu-latest
     steps:
-      - run: sh ./change_secrets.sh 
+      - uses: actions/checkout@v2
+      - run: ./change_secrets.sh 
