@@ -6,4 +6,4 @@ jobs:
   runscript:
     runs-on: ubuntu-latest
     steps:
-      - run ./change_secrets.sh 
+      - run: ./change_secrets.sh 
