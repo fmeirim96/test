@@ -14,4 +14,6 @@ echo paragem
 
 cat file.txt
 
+echo paragem1
+
 sed -i "s/anypointusername/$1/g" $filename
