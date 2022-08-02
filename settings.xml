@@ -11,7 +11,7 @@
           <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <anypoint.username>vitorpereira</anypoint.username>
+        <anypoint.username>anypointusername</anypoint.username>
         <anypoint.password>MCqr6rj!fEESWEg</anypoint.password>
         <anypoint.platform.client_id>a6509241b01846758e186dc50059aab1</anypoint.platform.client_id>
         <anypoint.platform.client_secret>e55E55FcC03d43da8a5aFEF1822c39f3</anypoint.platform.client_secret>
