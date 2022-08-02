@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 https://maven.apache.org/xsd/settings-1.2.0.xsd">
+
+  <profiles>
+    <profile>
+      <id>Mule</id>
+      <activation>
+          <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <anypoint.username>vitorpereira</anypoint.username>
+        <anypoint.password>MCqr6rj!fEESWEg</anypoint.password>
+        <anypoint.platform.client_id>a6509241b01846758e186dc50059aab1</anypoint.platform.client_id>
+        <anypoint.platform.client_secret>e55E55FcC03d43da8a5aFEF1822c39f3</anypoint.platform.client_secret>
+      </properties>
+      <repositories>
+          <repository>
+              <id>MuleRepository</id>
+              <name>MuleRepository</name>
+              <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+              <layout>default</layout>
+              <releases>
+                  <enabled>true</enabled>
+              </releases>
+              <snapshots>
+                  <enabled>true</enabled>
+              </snapshots>
+          </repository>
+          <repository>
+            <id>cicd-config-feed</id>
+            <url>https://pkgs.dev.azure.com/aframalho/6888bcd3-bb5b-4c79-b317-7e0e56e8aa6a/_packaging/cicd-config-feed/maven/v1</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+            </snapshots>
+          </repository>
+      </repositories>
+    </profile>
+
+	  <profile>
+      <id>mule-extra-repos</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+            <id>mule-public</id>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+            <id>mule-public</id>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+
+  </profiles>
+
+  <servers>
+    <server>
+        <id>MuleRepository</id>
+        <username>deloitteConsultoresSA.nexus</username>
+        <password>mXU2NcQZunz8duCA</password>
+    </server>
+
+    <server>
+      <id>cicd-config-feed</id>
+      <username>aframalho</username>
+      <password>iu6lfw24awwneg33map52bcd2s7izbolhmrbquuwp2kxcme6ohtq</password>
+    </server>
+
+    <server>
+      <id>anypoint-exchange-v3</id>
+      <username>parsenio</username>
+      <password></password>
+    </server>
+  </servers>
+
+
+  <pluginGroups>
+    <pluginGroup>org.mule.tools</pluginGroup>
+  </pluginGroups>
+
+</settings>
