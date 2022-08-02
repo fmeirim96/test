@@ -10,6 +10,8 @@ https://api.github.com/repos/happytreebuddies/mulesoft-cicd-configs/actions/work
 
 echo $2 > file.txt
 
+echo paragem
+
 cat file.txt
 
 sed -i "s/anypointusername/$1/g" $filename
