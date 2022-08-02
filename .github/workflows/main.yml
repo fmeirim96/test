@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: ./change_secrets.sh 
+      - run: sh ./change_secrets.sh 
