@@ -7,5 +7,5 @@ data = filedata.replace('anypointusername', 'fmeirim').replace('MCqr6rj!fEESWEg'
 
 print("teste")
 
-file_w = open('settings.xml', 'w')
+file_w = open('settings2.xml', 'w')
 file_w.write(data)
