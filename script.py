@@ -1,3 +1,5 @@
+#! /usr/bin/python
+
 with open('settings.xml', 'r') as file :
   filedata = file.read()
 
