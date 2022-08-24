@@ -1,8 +1,7 @@
-def replacement():
-  with open('file.txt', 'r') as file :
-    filedata = file.read()
+with open('file.txt', 'r') as file :
+  filedata = file.read()
 
-  data = filedata.replace('ram', 'abcd')
+data = filedata.replace('anypointusername', 'fmeirim').replace('MCqr6rj!fEESWEg','aurb2d4Txp!')
 
-  with open('file.txt', 'w') as file:
-    file.write(data)
+with open('file.txt', 'w') as file:
+  file.write(data)
