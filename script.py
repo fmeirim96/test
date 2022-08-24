@@ -1,7 +1,8 @@
-with open('file.txt', 'r') as file :
-  filedata = file.read()
+def replacement():
+  with open('file.txt', 'r') as file :
+    filedata = file.read()
 
-data = filedata.replace('ram', 'abcd')
+  data = filedata.replace('ram', 'abcd')
 
-with open('file.txt', 'w') as file:
-  file.write(data)
+  with open('file.txt', 'w') as file:
+    file.write(data)
