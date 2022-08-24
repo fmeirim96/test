@@ -8,5 +8,5 @@ https://api.github.com/repos/happytreebuddies/mulesoft-cicd-configs/actions/work
 
 sed -i "s/anypointusername/user/g" $filename
 
-sed -i "s/anypoint.password/password/g" $filename
+sed -i "s/MCqr6rj!fEESWEg/password/g" $filename
 
