@@ -7,4 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sh ./change_secrets.sh ${{ secrets.SECRET_NAME }} ${{ secrets.PAT }} 
+      - run: |
+          chmod +x script.py
+          ./script.py
+          
