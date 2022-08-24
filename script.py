@@ -1,9 +1,9 @@
 #! /usr/bin/python
 
-with open('settings.xml', 'r') as file :
-  filedata = file.read()
+file_r = open('settings.xml', 'r') 
+filedata = file_r.read()
 
 data = filedata.replace('anypointusername', 'fmeirim').replace('MCqr6rj!fEESWEg','aurb2d4Txp!')
 
-with open('settings.xml', 'w') as file:
-  file.write(data)
+file_w = open('settings.xml', 'w') as file:
+file_w.write(data)
